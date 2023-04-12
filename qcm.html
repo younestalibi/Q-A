@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap 4/bootstrap.min.css">
+    <script src="bootstrap 4/bootstrap.min.js"></script>
+
+
+    <script src="jQurey/Jquery.js"></script>
+    <link rel="stylesheet" href="qcm.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+        <h1 class="navbar-brand mr-a">QCM TEST</h1>
+    </nav>
+    <div class="row align-items-center hv-100">
+        <div class="col-8">
+            <div class="contain">
+                <div id="screen-container">
+                    <div id="screen" ></div>
+                </div>
+                <div class="options-container">
+                    <div onclick="click_the_answer(this)" class="options"></div>
+                    <div onclick="click_the_answer(this)" class="options"></div>
+                    <div onclick="click_the_answer(this)" class="options"></div>
+                    <div onclick="click_the_answer(this)" class="options"></div>
+                    <div class="next" onclick="next()" id="next">next</div>
+                    <div onclick="show_answer()" id="show-answer">show the answer</div>
+                </div>
+                <div class="progress w-100" style="background-image: linear-gradient(175deg,rgba(137, 43, 226, 0.651),rgba(0, 0, 255, 0.925));">
+                    <div class="progress-bar  bg-danger progress-bar-striped progress-bar-animated" id="progress" ></div>
+                </div>
+            </div> 
+                       
+        </div>
+
+        <div class="col d-flex align-items-center ">
+            <section class="side">
+                <div id="first">
+                    <h2>score: <span id="score">0</span><span id="over"></span></h2>
+                </div>
+                <div id="second">
+                    <h5 class="html" onclick="switche(this)">HTML</h5>
+                    <h5 class="css" onclick="switche(this)">CSS</h5>
+                    <h5 class="javascript" onclick="switche(this)">JAVASCRIPT</h5>
+                </div>
+                <div id="third">
+                    <h6 >HTML LEVEL : <span class="update-score">0%</span></h6>
+                    <h6 >CSS LEVEL : <span class="update-score">0%</span></h6>
+                    <h6 >JAVASCRIPT LEVEL : <span class="update-score">0%</span></h6>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="footer bg-dark d-flex align-items-center justify-content-center">
+        <p>younes talibi DEV-106</p>
+    </div>
+    <script src="qcm.js"></script>
+</body>
+</html>

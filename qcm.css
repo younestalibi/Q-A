@@ -1,0 +1,186 @@
+
+body{
+    font-family: Comic Sans MS;
+    background-color: rgba(169, 214, 64, 0.747);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    
+}
+.contain{
+    width: 95%;
+    margin:20px auto 0px;
+    border: 1px purple solid;
+    border-radius: 10px;
+    background-image: linear-gradient(60deg,rgba(132, 0, 255, 0.514),rgba(0, 0, 255, 0.568));
+}
+.options-container{
+    margin: 10px;
+}
+.options{
+    font-family: sans-serif;
+    background-color: aqua;
+    border: 1.5px solid;
+    border-radius: 7px;
+    padding: 10px;
+    width: 82%;
+    margin:0px auto 5px;
+    cursor: pointer;
+    font-weight: 550;
+}
+#next{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(139, 221, 114);
+    border: 1.5px solid;
+    border-radius: 7px;
+    padding: 10px;
+    width: 82%;
+    margin:0px auto 5px;
+    cursor: pointer;
+}
+#show-answer{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(139, 221, 114);
+    border: 1.5px solid;
+    border-radius: 7px;
+    padding: 10px;
+    width: 82%;
+    margin:0px auto 5px;
+    cursor: pointer;
+}
+#screen-container{
+    margin-top: 20px;
+    height: 230px;
+    display: flex;
+    transition: height 0.6s;
+}
+
+#screen{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px orange solid;
+    border-radius: 5px;
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    overflow-wrap:break-word;
+    transition: box-shadow 1s;
+}
+.side{
+    border-radius: 15px;
+    width: 95%;
+    margin:20px auto 0px;
+    border: 1px purple solid;
+    background-image: linear-gradient(200deg,rgba(132, 0, 255, 0.514),rgba(0, 0, 255, 0.568));
+    
+}
+#first{
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#second{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#third{
+    height: 140px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color:chartreuse;
+}
+h5{
+    background-color: yellowgreen;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    cursor: pointer;
+    padding: 10px;
+}
+.moving{
+    animation-name: x;
+    animation-duration: 0.3s;
+    animation-timing-function: ease; 
+}
+@keyframes x {
+    0%{transform: translate(-2px,-2px);}
+    25%{transform: translate(2px,2px);}
+    50%{transform: translate(-2px,-2px);}
+    75%{transform: translate(2px,2px);}
+    100%{transform: translate(0px,0px);}   
+}
+#progress{
+    width: 0%;
+    transition: width 1.3s;
+  
+    
+}
+.move{
+    animation: y 1s ; 
+    animation-delay: 0.7s;
+    transition: transform 0.5s;
+}
+@keyframes y {
+    0%{transform: rotate(-10deg);transform: translateX(-8px)}
+    33%{transform: rotate(10deg);transform: translateX(8px)}
+    66%{transform: rotate(-5deg)}
+    100%{transform: rotate(5deg);transform: translateX(4px)}   
+}
+.change{
+    animation: t 1s ;
+    animation-iteration-count: infinite; 
+}
+@keyframes t {
+    0%{background-color:purple }
+    33%{background-color:yellow }
+    66%{background-color: yellow }
+    100%{background-color:orange}  
+}
+.update-score{
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.row{
+    margin-top: 5% !important;    
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 70px;
+ }
+
+ #timer{
+     background-color: black;
+     color: red;
+     padding: 10px;
+     width: 125px;
+     text-align: center;
+     border: 2px gold solid;
+     border-radius: 20px;
+     transition: box-shadow 0.5s;
+ }
+ .gold{
+    box-shadow: 0px 0px 50px rgba(255, 217, 0, 0.623);
+ }
+
